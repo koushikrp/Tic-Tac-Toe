@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<title>Tic-Tac-Toe</title>
+	</head>
+	<body>
+		<header>
+			<h1>Tic-Tac-Toe</h1>
+		</header>
+		<main>
+			<div id="insidemain">
+				<div id="players">
+					<p id="playerturn">Your Turn</p>
+					<p id="aiturn">AI Turn</p>
+				</div>
+				<div id="board">
+					<div class="element pos1"></div>
+					<div class="element pos2"></div>
+					<div class="element pos3"></div>
+					<div class="element pos4"></div>
+					<div class="element pos5"></div>
+					<div class="element pos6"></div>
+					<div class="element pos7"></div>
+					<div class="element pos8"></div>
+					<div class="element pos9"></div>
+				</div>
+			</div>
+
+			<div id="sidebar">
+				<label for="name">Player Name:</label><br />
+				<input type="text" placeholder="Enter your Name" class="name" />
+				<button class="submitName">Submit</button>
+				<button class="start">Start/Restart</button>
+				<p class="results"></p>
+			</div>
+		</main>
+		<footer>
+			<p>&copy; 2021 Copyrights included</p>
+		</footer>
+		<script src="scripts.js"></script>
+	</body>
+</html>

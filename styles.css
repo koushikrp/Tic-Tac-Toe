@@ -1,0 +1,109 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+html {
+	font-size: 20px;
+	background: #ad5389; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #783a99, #309942); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#749c34,
+		#bda146
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+header {
+	height: 100px;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(71, 23, 116);
+}
+#insidemain {
+	width: 70%;
+	height: 80vh;
+	float: left;
+	position: relative;
+	border-radius: 10px;
+	margin-left: 40px;
+}
+#players {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top: 50px;
+}
+#players > p {
+	padding: 10px;
+	border-radius: 5px;
+}
+#playerturn {
+	background-color: rgb(163, 66, 87);
+}
+#board {
+	display: grid;
+	grid-template-columns: 100px 100px 100px;
+	grid-template-rows: 100px 100px 100px;
+	gap: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.element {
+	background-color: blueviolet;
+	text-align: center;
+	padding: 40px 0px;
+}
+#sidebar {
+	float: right;
+	width: 25%;
+	height: 80vh;
+	position: relative;
+}
+.name,
+.submitName,
+.start {
+	margin-top: 10px;
+	padding: 10px;
+}
+.start {
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+	border: none;
+	font-size: 25px;
+	font-family: fantasy;
+	background-color: rgb(205, 50, 50);
+	transition: 500ms all ease-in-out;
+}
+.start:hover {
+	cursor: pointer;
+	background-color: rgb(30, 240, 159);
+}
+.start:focus {
+	outline-color: transparent;
+	outline-style: solid;
+	box-shadow: 0 0 0 0.01em;
+}
+.results {
+	position: absolute;
+	top: 70%;
+	font-size: 40px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-weight: 600;
+	background: linear-gradient(to right, #ff8000, #008000);
+}
+footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 43px;
+	padding-left: 50px;
+	padding-top: 10px;
+	background-color: #bda146;
+}
