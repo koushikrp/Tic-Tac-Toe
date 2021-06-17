@@ -57,6 +57,9 @@ header {
 	text-align: center;
 	padding: 40px 0px;
 }
+.element:hover {
+	transform: scale(1.05);
+}
 #sidebar {
 	float: right;
 	width: 25%;
@@ -88,6 +91,7 @@ header {
 .start:focus {
 	outline-color: transparent;
 	outline-style: solid;
+	border: none;
 	box-shadow: 0 0 0 0.01em;
 }
 .results {
